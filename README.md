@@ -1,10 +1,10 @@
-# Maitreya Ganu  
+# Maitreya Sameer Ganu  
 
 🎓 **Student at IISER Thiruvananthapuram**  
 📧 maitreyaganu@gmail.com  
 📍 Pune, Maharashtra  
 🌐 [LinkedIn Profile](https://www.linkedin.com/in/maitreya-ganu-673995286/)  
-
+📄 [Download My CV](./Maitreya_Ganu_s_Curriculum_Vitae.pdf) 
 ---
 
 ## 📝 About Me  
@@ -16,8 +16,8 @@ I am also an experienced tabla player with a history of performing at cultural e
 
 ## 🛠️ Skills and Strengths  
 - **Programming Languages:** Python, C  
-- **Mathematics Expertise:** Applied Cryptography, Number Theory, and Group Theory  
-- **Key Traits:** Motivator, Quick Learner, Passionate, and Determined  
+- **Mathematics Expertise:** Applied Cryptography | Number Theory | Calculus | Basics of Group Theory  
+- **Key Traits:** Motivator | Quick Learner | Passionate | Determined | Hustler
 - **Other Skills:**  
   - Communication and Presentation  
   - Decision Making  
@@ -60,16 +60,16 @@ I am also an experienced tabla player with a history of performing at cultural e
 ### **Finance Coordinator**  
 **Club of Mathematics, IISER Thiruvananthapuram (CMIT)** | March 2024 – Ongoing  
 - Managed merchandise financing and gained valuable experience working with diverse teams.  
-- Supported administration and management during the Frontier Symposium in Mathematics, 2023.  
+- Supported administration and management during the Frontier Symposium in Mathematics at IISER Thiruvananthapuram, 2023.  
 
 ### **Music Club Representative**  
 **IISER Thiruvananthapuram** | January 2024 – Ongoing  
 - Performed tabla on various occasions including Independence Day, Republic Day, Onam, and ISHYA events.  
-
-### **Internship**  
+---
+### **Internships**  
 **Reading Project on Number Theory and Cryptography**  
 **IISER Pune** | May 2024 – July 2024  
-- Studied and presented topics like the Data Encryption Standard (DES), ciphers, group theory, and modulo arithmetic under Prof. Soumen Maity.  
+- Studied and presented topics like the Data Encryption Standard (DES), ciphers, group theory, and modulo arithmetic under the kind guidance and expertise of Prof. Soumen Maity.  
 
 ---
 
