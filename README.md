@@ -16,8 +16,8 @@ I am also an experienced tabla player with a history of performing at cultural e
 
 ## 🛠️ Skills and Strengths  
 - **Programming Languages:** Python, C  
-- **Mathematics Expertise:** Applied Cryptography | Number Theory | Calculus | Basics of Group Theory  
-- **Key Traits:** Motivator | Quick Learner | Passionate | Determined | Hustler
+- **Mathematics Expertise:** | Applied Cryptography | Number Theory | Calculus | Basics of Group Theory  
+- **Key Traits:** | Motivator | Quick Learner | Passionate | Determined | Hustler
 - **Other Skills:**  
   - Communication and Presentation  
   - Decision Making  
