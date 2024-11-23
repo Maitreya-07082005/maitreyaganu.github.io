@@ -12,12 +12,12 @@
             margin: 0;
             padding: 0;
             line-height: 1.6;
-            background: linear-gradient(120deg, #f6f9fc, #dbe8f5);
+            background: linear-gradient(120deg, #1e3a8a, #2563eb, #60a5fa);
             color: #333;
             overflow-x: hidden;
         }
         header {
-            background: linear-gradient(120deg, #5a5afc, #817eff);
+            background: linear-gradient(120deg, #3b82f6, #93c5fd);
             color: #fff;
             padding: 2rem 0;
             text-align: center;
@@ -41,10 +41,13 @@
         }
         section {
             margin-bottom: 2rem;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: scrollFade 1s ease-in-out forwards;
         }
         section h2 {
-            color: #5a5afc;
-            border-bottom: 2px solid #5a5afc;
+            color: #3b82f6;
+            border-bottom: 2px solid #3b82f6;
             display: inline-block;
             margin-bottom: 1rem;
         }
@@ -55,7 +58,7 @@
             margin-bottom: 0.5rem;
         }
         a {
-            color: #5a5afc;
+            color: #3b82f6;
             text-decoration: none;
         }
         a:hover {
@@ -64,7 +67,7 @@
         footer {
             text-align: center;
             padding: 1rem;
-            background: #5a5afc;
+            background: #3b82f6;
             color: #fff;
         }
         .social-links {
@@ -77,7 +80,7 @@
             transition: color 0.3s;
         }
         .social-links a:hover {
-            color: #5a5afc;
+            color: #3b82f6;
         }
         /* Animations */
         @keyframes fadeIn {
@@ -98,6 +101,12 @@
                 opacity: 1;
             }
         }
+        @keyframes scrollFade {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
     </style>
 </head>
 <body>
@@ -105,25 +114,11 @@
         <h1>Maitreya Sameer Ganu</h1>
         <p>🌟 Student at IISER Thiruvananthapuram</p>
         <p>📧 <a href="mailto:maitreyaganu@gmail.com" style="color: #fff;">maitreyaganu@gmail.com</a></p>
-        <!-- Social Links -->
         <div class="social-links">
             <a href="https://www.linkedin.com/in/maitreya-ganu-673995286" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        
-        </div>
         </div>
     </header>
     <main>
-        <section>
-            <h2>About Me 👋</h2>
-            <p>
-                I am a second-year BS-MS student at IISER Thiruvananthapuram with a strong interest in mathematics, data science, cybersecurity, and artificial intelligence. 
-                My journey is fueled by a passion for learning, collaborating, and applying knowledge to solve real-world problems.
-            </p>
-            <p>
-                I am also an experienced tabla player 🎵 with a history of performing at cultural events and celebrations, blending art and academia seamlessly. 
-                Additionally, I have a knack for leadership and management, currently serving as the finance coordinator for the Club of Mathematics at IISER.
-            </p>
-        </section>
         <section>
             <h2>Education 🎓</h2>
             <ul>
@@ -132,6 +127,13 @@
                 <li><strong>High School Graduate</strong> - Sir Parshurambhau College, Pune (2021 – May 2023)</li>
                 <li><strong>Matriculation</strong> - Sevasadan English Medium School, Pune (2008 – March 2021)</li>
             </ul>
+        </section>
+        <section>
+            <h2>About Me 👋</h2>
+            <p>
+                I am a second-year BS-MS student at IISER Thiruvananthapuram with a strong interest in mathematics, data science, cybersecurity, and artificial intelligence. 
+                My journey is fueled by a passion for learning, collaborating, and applying knowledge to solve real-world problems.
+            </p>
         </section>
         <section>
             <h2>Achievements 🌟</h2>
@@ -143,59 +145,37 @@
             </ul>
         </section>
         <section>
-            <h2>Certifications 📜</h2>
-            <ul>
-                <li><strong>Data Analysis with Python:</strong> Successfully completed a comprehensive course under Finlatics , a TedXIISER_TVM initiative.  
-                    <a href="./certificate.pdf" download>📥 Click here to download my Course Completion Certificate !</a>
-                </li>
-                <li><strong>Internship Completion:</strong> Recognized for completing a reading project on Number Theory and Cryptography at Indian Institute of Science Education and Research , Pune.  
-                    <a href="./Internship Completion Certificate.pdf" download>📥 Click here to download my Internship Completion Certificate !</a>
-                </li>
-                <li><strong>Letter of Recommendation:</strong> Received for exceptional performance and contributions.  
-                    <a href="./LoR.pdf" download>📥 Click here to download my Letter of Recommendation !</a>
-                </li>
-            </ul>
-        </section>
-        <section>
-            <h2>Experience 💼</h2>
-            <ul>
-                <li>
-                    <strong>Finance Coordinator</strong>  
-                    <em>Club of Mathematics, IISER Thiruvananthapuram (March 2024 – Ongoing)</em>  
-                    Managed merchandise financing and supported administration during the Frontier Symposium in Mathematics, 2023.
-                </li>
-                <li>
-                    <strong>Music Club Representative</strong>  
-                    <em>IISER Thiruvananthapuram (January 2024 – Ongoing)</em>  
-                    Performed tabla on various occasions including Independence Day, Republic Day, Onam, and ISHYA events.
-                </li>
-            </ul>
-        </section>
-        <section>
             <h2>Hobbies 🏅</h2>
             <ul>
                 <li>Playing Tabla and Dholaki 🎶 (with over 5 years of live stage performance experience).</li>
                 <li>Reading research papers, particularly in data science 📖.</li>
                 <li>Football enthusiast ⚽, having competed at school and college levels, including ITSAV Football Tournament.</li>
+                <li>Passionate about blending art and academia seamlessly.</li>
             </ul>
         </section>
         <section>
-            <h2>Languages 🌐</h2>
+            <h2>Volunteering Roles 🤝</h2>
             <ul>
-                <li><strong>English:</strong> Fluent</li>
-                <li><strong>Marathi:</strong> Fluent</li>
-                <li><strong>Hindi:</strong> Fluent</li>
-                <li><strong>German:</strong> Intermediate</li>
-                <li><strong>Bengali:</strong> Basic</li>
+                <li><strong>Event Coordinator:</strong> Successfully managed and executed events for Diwali, Ganpati, and more.</li>
+                <li><strong>Administrative Assistant:</strong> Provided critical logistical support during major festivals and events at IISER.</li>
             </ul>
-        </section>
-        <section>
-            <h2>Download My CV 📄</h2>
-            <p><a href="./Maitreya_Ganu_s_Curriculum_Vitae.pdf" download>Click here to download my CV</a></p>
         </section>
     </main>
     <footer>
         <p>🌟 Designed by Maitreya Sameer Ganu </p>
     </footer>
+    <script>
+        // Scroll animation trigger
+        const sections = document.querySelectorAll('section');
+        window.addEventListener('scroll', () => {
+            const triggerHeight = window.innerHeight / 1.2;
+            sections.forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                if (sectionTop < triggerHeight) {
+                    section.style.animationDelay = "0.2s";
+                }
+            });
+        });
+    </script>
 </body>
 </html>
