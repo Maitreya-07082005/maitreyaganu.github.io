@@ -1,4 +1,196 @@
-<h2>Certifications 🏅</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maitreya Sameer Ganu - Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
+    <style>
+        /* General Styles */
+        :root {
+            --background-color: linear-gradient(120deg, #1e3a8a, #2563eb, #60a5fa);
+            --text-color: #333;
+            --header-background: linear-gradient(120deg, #3b82f6, #93c5fd);
+            --card-background: #fff;
+            --accent-color: #3b82f6;
+            --social-icon-color: #333;
+            --footer-background: #3b82f6;
+        }
+
+        [data-theme="dark"] {
+            --background-color: linear-gradient(120deg, #1e293b, #0f172a);
+            --text-color: #f1f5f9;
+            --header-background: linear-gradient(120deg, #0f172a, #1e293b);
+            --card-background: #1e293b;
+            --accent-color: #93c5fd;
+            --social-icon-color: #f1f5f9;
+            --footer-background: #1e293b;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background: var(--background-color);
+            color: var(--text-color);
+            overflow-x: hidden;
+            transition: background 0.3s, color 0.3s;
+        }
+        header {
+            background: var(--header-background);
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+        header p {
+            margin: 0.5rem 0;
+        }
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: var(--card-background);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: slideIn 1s ease-in-out;
+        }
+        section {
+            margin-bottom: 2rem;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: scrollFade 1s ease-in-out forwards;
+        }
+        section h2 {
+            color: var(--accent-color);
+            border-bottom: 2px solid var(--accent-color);
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: var(--footer-background);
+            color: #fff;
+        }
+        .social-links {
+            margin-top: 1rem;
+        }
+        .social-links a {
+            font-size: 2rem;
+            margin: 0 10px;
+            color: var(--social-icon-color);
+            transition: color 0.3s;
+        }
+        .social-links a:hover {
+            color: var(--accent-color);
+        }
+        .theme-toggle {
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background: var(--card-background);
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s, color 0.3s;
+        }
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        @keyframes scrollFade {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Maitreya Sameer Ganu</h1>
+        <p>🌟 Data Science Enthusiast , at Indian Institute of Science Education and Research (IISER) Thiruvananthapuram</p>
+        <p>📧 <a href="mailto:maitreyaganu@gmail.com" style="color: #fff;">maitreyaganu@gmail.com</a></p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/maitreya-ganu-673995286" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Maitreya-07082005/maitreyaganu.github.io" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+        <button id="theme-toggle" class="theme-toggle">Switch to Dark Mode</button>
+    </header>
+    <main>
+        <section>
+            <h2>Education 🎓</h2>
+            <ul>
+                <li><strong><u>BS-MS (Dual Degree)</u></strong> - IISER Thiruvananthapuram (Sept 2023 – Present)</li>
+                <li><strong><u>FYBSc Statistics</u></strong> - Fergusson College, Pune (July 2023 – August 2023)</li>
+                <li><strong><u>High School Graduate</u></strong> - Sir Parshurambhau College, Pune (2021 – May 2023)</li>
+                <li><strong><u>Matriculation</u></strong> - Sevasadan English Medium School, Pune (2008 – March 2021)</li>
+            </ul>
+        </section>
+        <section>
+          <h2>Experience 💼</h2>
+          <ul>
+              <li><strong><u>Finance Coordinator</u></strong> at
+            Club of Mathematics, IISER Thiruvananthapuram (March 2024 – Ongoing) : 
+            Managed merchandise financing and supported administration during the Frontier Symposium in Mathematics, 2023.
+        </li>
+        <li>
+            <strong><u>Music Club Representative</u></strong> at
+            IISER Thiruvananthapuram (January 2024 – Ongoing) :  
+            Performed tabla on various occasions including Independence Day, Republic Day, Onam, and ISHYA events and helped the Music Club in it's merchandise and its finance.
+        </li>
+          </ul>
+     </section>
+
+        <section>
+            <h2>Internships 🧑‍💻</h2>
+            <ul>
+                <li><strong><u>Cryptography Internship , IISER Pune : </u></strong>
+                    <ul>
+                        <li> Completed a reading project about public key cryptography under the kind guidance and mentorship of Prof. Soumen Maity , HOD School of Mathematics , IISER Pune.</li>
+                        <li>Studied advanced cryptographic techniques and security models like the Data Encryption Standard.</li>
+                    </ul>
+                    <a href="Internship Completion Certificate.pdf" download>Click here to download the 'Internship Completion Certificate'.</a>
+                </li>
+            </ul>
+        </section>
+      <section>
+    <h2>Certifications 🏅</h2>
+   <h2>Certifications 🏅</h2>
 <table style="width: 100%; border-collapse: collapse; text-align: left;">
     <thead>
         <tr style="background-color: #333; color: #fff;">
@@ -68,3 +260,156 @@
         </tr>
     </tbody>
 </table>
+
+</section>
+
+
+
+<section>
+    <h2>Projects 💯</h2>
+    <table style="width: 100%; border-collapse: collapse; text-align: left;">
+        <thead>
+            <tr style="background-color: #f2f2f2;">
+                <th style="padding: 8px; border: 1px solid #ddd;">Name of the Project</th>
+                <th style="padding: 8px; border: 1px solid #ddd;">Download</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="padding: 8px; border: 1px solid #ddd;">
+                    <strong>Heart Disease Prediction</strong><br>
+                    <em>The accuracy of the model was 81.463% and was done using Logistic Regression.</em>
+                </td>
+                <td style="padding: 8px; border: 1px solid #ddd;">
+                    <a href="Heart_Disease_Prediction_using_Machine_Learning (1).pdf" download>Click here to download</a>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; border: 1px solid #ddd;">
+                    <strong>Diabetes Prediction</strong><br>
+                    <em>The accuracy of the model was 80.5% and was done without using TensorFlow.</em>
+                </td>
+                <td style="padding: 8px; border: 1px solid #ddd;">
+                    <a href="Diabetes_Prediction_using_Machine_Leaning.pdf" download>Click here to download</a>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; border: 1px solid #ddd;">
+                    <strong>Stock Prices Prediction</strong><br>
+                    <em>This project focuses on building the foundations of neural networks and basics of deep learning, and the application of those on real-life datasets.</em>
+                </td>
+                <td style="padding: 8px; border: 1px solid #ddd;">
+                    <a href="Stock_Price_Prediction_using_Machine_Learning.pdf" download>Click here to download</a>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; border: 1px solid #ddd;">
+                    <strong>Deep Learning Approach on the MNIST dataset</strong><br>
+                    <em>The accuracy of the model was around 99% and was done using Deep Neural Networks.</em>
+                </td>
+                <td style="padding: 8px; border: 1px solid #ddd;">
+                    <a href="A_Deep_Learning_Approach_for_Handwritten_Digit_Classification_Using_the_MNIST_Dataset.pdf" download>Click here to download</a>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; border: 1px solid #ddd;">
+                    <strong>Temperature Prediction</strong><br>
+                    <em>This project makes use of LSTM and predicts the maximum and minimum temperatures.</em>
+                </td>
+                <td style="padding: 8px; border: 1px solid #ddd;">
+                    <a href="Temperature_Prediction_using_Deep_Learning.pdf" download>Click here to download</a>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; border: 1px solid #ddd;">
+                    <strong>IPL Score Prediction</strong><br>
+                    <em>This project makes use of neural networks and provides an interactive interface to the user to dynamically predict the total score of any match at any venue.</em>
+                </td>
+                <td style="padding: 8px; border: 1px solid #ddd;">
+                    <a href="IPL_score_prediction.pdf" download>Click here to download</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+        <section>
+            <h2>Achievements 🌟</h2>
+            <ul>
+                <li><strong>INSPIRE Scholar:</strong> Awarded by the Department of Science and Technology for being among the top 1% in my college.</li>
+                <li><strong>SP College Scholarship:</strong> Secured 2nd rank in the science stream in 12th MSBSHSE board exams.</li>
+                <li><strong>Rangotsav Golden Art Merit Award:</strong> Represented school in national-level drawing competitions.</li>
+                <li><strong>English Marathon Awards:</strong> Multiple state and district-level awards for excellence in English.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Hobbies & Interests 🏅</h2>
+            <ul>
+                <li>Playing Tabla and Dholaki 🎶 (with over 5 years of live stage performance experience).</li>
+                <li>Reading research papers, particularly in data science 📖.</li>
+                <li>Football enthusiast ⚽, having competed at school and college levels, including ITSAV Football Tournament.</li>
+                <li>Blending art and academia seamlessly while staying passionate about creative and analytical pursuits.</li>
+            </ul>
+        </section>
+        <section>
+             <h2>Skills 🛠️</h2>
+             <ul>
+                 <li><strong>Programming Languages :</strong> Python , C , LaTeX</li>
+                 <li><strong>Data Science & Analysis :</strong> Pandas, NumPy , Matplotlib , Scikit-learn</li>
+                 <li><strong>Deep Learning : </strong> Tensorflow
+                 <li><strong>Machine Learning :</strong> Regression , Clustering , Dimensionality reduction , Community detection and network analysis</li>
+                 <li><strong>Academic skills :</strong> Communication , Presentations , Quick learner  </li>
+                 <li><strong>Other Skills :</strong> Leader , Analytical thinker , Problem Solver </li>
+                 <li><strong>Tools & Technologies:</strong> Jupyter Notebooks, VS Code , Overleaf , MS Word , MS Excel , MS Powerpoint</li>
+             </ul>
+        </section>
+
+        <section>
+            <h2>Languages 🌐</h2>
+            <ul>
+                <li><strong>English:</strong> Fluent</li>
+                <li><strong>Marathi:</strong> Fluent</li>
+                <li><strong>Hindi:</strong> Fluent</li>
+                <li><strong>German:</strong> Intermediate</li>
+                <li><strong>Bengali:</strong> Basic</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Volunteering Roles 🤝</h2>
+            <ul>
+            <li><strong>Event Coordinator:</strong> Successfully managed and executed events for Diwali, Ganpati, and more.</li>
+             <li><strong>Administrative Assistant:</strong> Provided critical logistical support during major festivals and events at IISER.</li>
+            </ul>
+        </section>
+       <section>
+    <h2>Curriculum Vitae ✅</h2>
+    <p>Click the link below to download my CV:</p>
+    <ul>
+        <li>
+            <a href="CV.pdf" download>Click here to download.</a>
+        </li>
+    </ul>
+</section>
+
+    </main>
+    <footer>
+        <p>🌟 Designed by Maitreya Sameer Ganu</p>
+    </footer>
+    <script>
+        const toggleButton = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        toggleButton.addEventListener('click', () => {
+            const isDark = body.getAttribute('data-theme') === 'dark';
+            if (isDark) {
+                body.removeAttribute('data-theme');
+                toggleButton.textContent = 'Switch to Dark Mode';
+            } else {
+                body.setAttribute('data-theme', 'dark');
+                toggleButton.textContent = 'Switch to Light Mode';
+            }
+        });
+    </script>
+</body>
+</html>
+        
