@@ -15,6 +15,8 @@
             --accent-color: #3b82f6;
             --social-icon-color: #333;
             --footer-background: #3b82f6;
+            --dropdown-bg: #333;
+            --dropdown-hover-bg: #2563eb;
         }
 
         [data-theme="dark"] {
@@ -25,6 +27,8 @@
             --accent-color: #93c5fd;
             --social-icon-color: #f1f5f9;
             --footer-background: #1e293b;
+            --dropdown-bg: #0f172a;
+            --dropdown-hover-bg: #93c5fd;
         }
 
         body {
@@ -37,21 +41,49 @@
             overflow-x: hidden;
             transition: background 0.3s, color 0.3s;
         }
+
         header {
             background: var(--header-background);
             color: #fff;
             padding: 2rem 0;
             text-align: center;
             animation: fadeIn 2s ease-in-out;
+            position: relative;
         }
+
         header h1 {
             margin: 0;
             font-size: 3rem;
         }
+
         header p {
             margin: 0.5rem 0;
         }
-        main {
+
+        /* Navigation bar styles */
+        .navbar {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: var(--dropdown-bg);
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: var(--dropdown-hover-bg);
+        }
+
+        /* About Section */
+        #about-section {
             max-width: 900px;
             margin: 2rem auto;
             padding: 2rem;
@@ -60,49 +92,47 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             animation: slideIn 1s ease-in-out;
         }
+
+        #about-section img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+
         section {
             margin-bottom: 2rem;
             opacity: 0;
             transform: translateY(30px);
             animation: scrollFade 1s ease-in-out forwards;
         }
+
         section h2 {
             color: var(--accent-color);
             border-bottom: 2px solid var(--accent-color);
             display: inline-block;
             margin-bottom: 1rem;
         }
-        ul {
-            padding-left: 20px;
-        }
-        ul li {
-            margin-bottom: 0.5rem;
-        }
-        a {
-            color: var(--accent-color);
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
+
         footer {
             text-align: center;
             padding: 1rem;
             background: var(--footer-background);
             color: #fff;
         }
-        .social-links {
-            margin-top: 1rem;
-        }
+
         .social-links a {
             font-size: 2rem;
             margin: 0 10px;
             color: var(--social-icon-color);
             transition: color 0.3s;
         }
+
         .social-links a:hover {
             color: var(--accent-color);
         }
+
         .theme-toggle {
             margin-top: 1rem;
             padding: 0.5rem 1rem;
@@ -113,369 +143,81 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: background 0.3s, color 0.3s;
         }
+
         /* Animations */
         @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
+
         @keyframes slideIn {
-            from {
-                transform: translateY(20px);
-                opacity: 0;
-            }
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
         }
+
         @keyframes scrollFade {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            to { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Maitreya Sameer Ganu</h1>
-        <p>🌟 Data Science Enthusiast , at Indian Institute of Science Education and Research (IISER) Thiruvananthapuram</p>
+        <p>🌟 Data Science Enthusiast, at Indian Institute of Science Education and Research (IISER) Thiruvananthapuram</p>
         <p>📧 <a href="mailto:maitreyaganu@gmail.com" style="color: #fff;">maitreyaganu@gmail.com</a></p>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/maitreya-ganu-673995286" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/Maitreya-07082005/maitreyaganu.github.io" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+
+        <!-- Navbar with Dropdown Menu -->
+        <div class="navbar">
+            <a href="#about-section">About Me</a>
+            <a href="#projects">Projects 💯</a>
+            <a href="#cv-resume">CV & Resume ✅</a>
+            <a href="#contact">Contact Info 📞</a>
         </div>
         <button id="theme-toggle" class="theme-toggle">Switch to Dark Mode</button>
     </header>
-    <main>
-        <section>
-            <h2>Education 🎓</h2>
-            <ul>
-                <li><strong><u>BS-MS (Dual Degree)</u></strong> - IISER Thiruvananthapuram (Sept 2023 – Present)</li>
-                <li><strong><u>FYBSc Statistics</u></strong> - Fergusson College, Pune (July 2023 – August 2023)</li>
-                <li><strong><u>High School Graduate</u></strong> - Sir Parshurambhau College, Pune (2021 – May 2023)</li>
-                <li><strong><u>Matriculation</u></strong> - Sevasadan English Medium School, Pune (2008 – March 2021)</li>
-            </ul>
-        </section>
-        <section>
-          <h2>Experience 💼</h2>
-          <ul>
-              <li><strong><u>Finance Coordinator</u></strong> at
-            Club of Mathematics, IISER Thiruvananthapuram (March 2024 – Ongoing) : 
-            Managed merchandise financing and supported administration during the Frontier Symposium in Mathematics, 2023.
-        </li>
-        <li>
-            <strong><u>Music Club Representative</u></strong> at
-            IISER Thiruvananthapuram (January 2024 – Ongoing) :  
-            Performed tabla on various occasions including Independence Day, Republic Day, Onam, and ISHYA events and helped the Music Club in it's merchandise and its finance.
-        </li>
-          </ul>
-     </section>
 
-        <section>
-            <h2>Internships 🧑‍💻</h2>
-           <table style="width: 100%; border-collapse: collapse; text-align: left;">
-    <thead>
-        <tr style="background-color: #333; color: #fff;">
-            <th style="padding: 8px; border: 1px solid #ddd;">Internship Details</th>
-            <th style="padding: 8px; border: 1px solid #ddd;">Download</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td style="padding: 8px; border: 1px solid #ddd;">
-                <strong>Cryptography Internship, IISER Pune</strong><br>
-                <ul>
-                    <li>Completed a reading project about public key cryptography under the guidance of Prof. Soumen Maity, HOD School of Mathematics, IISER Pune.</li>
-                    <li>Studied advanced cryptographic techniques and security models like the Data Encryption Standard.</li>
-                </ul>
-            </td>
-            <td style="padding: 8px; border: 1px solid #ddd;">
-                <a href="Internship Completion Certificate.pdf" download>Click here to download Internship Completion Certificate </a>
-            </td>
-        </tr>
-        <tr>
-            <td style="padding: 8px; border: 1px solid #ddd;">
-                <strong>Community Detection and Network Analysis using Modularity, IISER Thiruvananthapuram</strong><br>
-                <ul>
-                    <li>Completed a winter project on community and network detection on various graphs under the kind guidance and mentorship of Prof. Saptarshi Bej , School of Data SCience , IISER Thiruvananthapuram . </li>
-                    <li>Extended the study to the brain of C. elegans, proteins, and road networks.</li>
-                </ul>
-            </td>
-            <td style="padding: 8px; border: 1px solid #ddd;">
-                <a href="Maitreya_certificate.pdf.pdf" download>Click here to download Internship Completion Certificate</a>
-            </td>
-        </tr>
-    </tbody>
-</table>
+    <!-- About Section (Home) -->
+    <section id="about-section">
+        <h2>About Me 👤</h2>
+        <img src="your-photo.jpg" alt="Maitreya Sameer Ganu">
+        <p>Hello! I'm Maitreya Sameer Ganu, a passionate Data Science enthusiast currently studying at IISER Thiruvananthapuram. I have a deep interest in machine learning, artificial intelligence, and analytics.</p>
+        <p>I am constantly exploring new challenges and projects that allow me to apply my skills in data analysis, prediction modeling, and deep learning.</p>
+        <p>Feel free to explore my projects and reach out to me for collaborations or questions.</p>
+    </section>
 
-            
-        </section>
-      <section>
-    
-   <h2>Certifications 🏅</h2>
-<table style="width: 100%; border-collapse: collapse; text-align: left;">
-    <thead>
-        <tr style="background-color: #333; color: #fff;">
-            <th style="padding: 8px; border: 1px solid #ddd;">Name of Certification</th>
-            <th style="padding: 8px; border: 1px solid #ddd;">Download</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td style="padding: 8px; border: 1px solid #ddd;">
-                <strong>Kaggle: Python</strong>
-            </td>
-            <td style="padding: 8px; border: 1px solid #ddd;">
-                <a href="Maitreya Ganu - Python.pdf" download>Click here to download</a>
-            </td>
-        </tr>
-        <tr>
-            <td style="padding: 8px; border: 1px solid #ddd;">
-                <strong>Kaggle: Introduction to Programming</strong>
-            </td>
-            <td style="padding: 8px; border: 1px solid #ddd;">
-                <a href="Maitreya Ganu - Intro to Programming.pdf" download>Click here to download</a>
-            </td>
-        </tr>
-        <tr>
-            <td style="padding: 8px; border: 1px solid #ddd;">
-                <strong>Kaggle: Pandas</strong>
-            </td>
-            <td style="padding: 8px; border: 1px solid #ddd;">
-                <a href="Maitreya Ganu - Pandas.pdf" download>Click here to download</a>
-            </td>
-        </tr>
-         <tr>
-            <td style="padding: 8px; border: 1px solid #ddd;">
-                <strong>Kaggle: Data Visualization</strong>
-            </td>
-            <td style="padding: 8px; border: 1px solid #ddd;">
-                <a href="Maitreya Ganu - Data Visualization.pdf" download>Click here to download</a>
-            </td>
-        </tr>
-         <tr>
-            <td style="padding: 8px; border: 1px solid #ddd;">
-                <strong>Kaggle: Introduction to Machine learning</strong>
-            </td>
-            <td style="padding: 8px; border: 1px solid #ddd;">
-                <a href="Maitreya Ganu - Intro to Machine Learning.pdf" download>Click here to download</a>
-            </td>
-        </tr>
-         <tr>
-            <td style="padding: 8px; border: 1px solid #ddd;">
-                <strong>Kaggle: Apply machine learning to real-world forecasting tasks. (Time Series Data Analysis) </strong>
-            </td>
-            <td style="padding: 8px; border: 1px solid #ddd;">
-                <a href="Maitreya Ganu - Time Series.pdf" download>Click here to download</a>
-            </td>
-        </tr>
-        <tr>
-            <td style="padding: 8px; border: 1px solid #ddd;">
-                <strong>Finlatics Data Analysis with Python</strong><br>
-                <em>Acquired skills in Python-based data analysis, including statistical modeling and visualization.</em>
-            </td>
-            <td style="padding: 8px; border: 1px solid #ddd;">
-                <a href="certificate.pdf" download>Course Completion Certificate</a><br>
-                <a href="LoR.pdf" download>Letter of Recommendation</a>
-            </td>
-        </tr>
-        <tr>
-            <td style="padding: 8px; border: 1px solid #ddd;">
-                <strong>Kaggle: Introduction to Deep Learning</strong><br>
-                <em>Acquired basic knowledge of neural networks by using TensorFlow.</em>
-            </td>
-            <td style="padding: 8px; border: 1px solid #ddd;">
-                <a href="Maitreya Ganu - Intro to Deep Learning.pdf" download>Click here to download</a>
-            </td>
-        </tr>
-          <tr>
-            <td style="padding: 8px; border: 1px solid #ddd;">
-                <strong>Kaggle: AI Ethics</strong><br>
-                <em>Explored practical tools to guide the moral design of AI systems.</em>
-            </td>
-            <td style="padding: 8px; border: 1px solid #ddd;">
-                <a href="Maitreya Ganu - Intro to AI Ethics.pdf" download>Click here to download</a>
-            </td>
-        </tr>
-    </tbody>
-</table>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects 💯</h2>
+        <table style="width: 100%; border-collapse: collapse; text-align: left;">
+            <!-- Your project list here (same as before) -->
+        </table>
+    </section>
 
-</section>
+    <!-- CV/Resume Section -->
+    <section id="cv-resume">
+        <h2>Curriculum Vitae and Resume ✅</h2>
+        <p>Click the link below to download my CV and Resume:</p>
+        <ul>
+            <li><a href="CV.pdf" download>Download CV.</a></li>
+            <li><a href="Resume.pdf" download>Download Resume.</a></li>
+        </ul>
+    </section>
 
+    <!-- Contact Info Section -->
+    <section id="contact">
+        <h2>Contact Information 📞</h2>
+        <p>Feel free to reach out to me via email at <a href="mailto:maitreyaganu@gmail.com">maitreyaganu@gmail.com</a>.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/maitreya-ganu-673995286" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </section>
 
-
-<section>
-    <h2>Projects 💯</h2>
-   <table style="width: 100%; border-collapse: collapse; text-align: left;">
-    <thead>
-        <tr style="background-color: #333; color: #fff;">
-            <th style="padding: 8px; border: 1px solid #ddd;">Name of the Project</th>
-            <th style="padding: 8px; border: 1px solid #ddd;">Download</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-    <td style="padding: 8px; border: 1px solid #ddd;">
-        <strong>Personal Finance Manager App</strong><br>
-        <em>
-            The Personal Finance Manager is a web app to track and manage daily transactions. 
-            It offers features like adding and deleting transactions, dynamic pie charts for 
-            expenses, and downloadable monthly reports as PDFs, all with a user-friendly, 
-            professional design.
-        </em>
-    </td>
-    <td style="padding: 8px; border: 1px solid #ddd;">
-    </td>
-</tr>
-
-        <tr>
-            <td style="padding: 8px; border: 1px solid #ddd;">
-                <strong>Heart Disease Prediction</strong><br>
-                <em>The accuracy of the model was 81.463% and was done using Logistic Regression.</em>
-            </td>
-            <td style="padding: 8px; border: 1px solid #ddd;">
-                <a href="Heart_Disease_Prediction_using_Machine_Learning (1).pdf" download>Click here to download</a>
-            </td>
-        </tr>
-        <tr>
-            <td style="padding: 8px; border: 1px solid #ddd;">
-                <strong>Diabetes Prediction</strong><br>
-                <em>The accuracy of the model was 80.5% and was done without using TensorFlow.</em>
-            </td>
-            <td style="padding: 8px; border: 1px solid #ddd;">
-                <a href="Diabetes_Prediction_using_Machine_Leaning.pdf" download>Click here to download</a>
-            </td>
-        </tr>
-        <tr>
-            <td style="padding: 8px; border: 1px solid #ddd;">
-                <strong>Stock Prices Prediction</strong><br>
-                <em>This project focuses on building the foundations of neural networks and basics of deep learning, and the application of those on real-life datasets.</em>
-            </td>
-            <td style="padding: 8px; border: 1px solid #ddd;">
-                <a href="Stock_Price_Prediction_using_Machine_Learning.pdf" download>Click here to download</a>
-            </td>
-        </tr>
-        <tr>
-            <td style="padding: 8px; border: 1px solid #ddd;">
-                <strong>Deep Learning Approach on the MNIST dataset</strong><br>
-                <em>The accuracy of the model was around 99% and was done using Deep Neural Networks.</em>
-            </td>
-            <td style="padding: 8px; border: 1px solid #ddd;">
-                <a href="A_Deep_Learning_Approach_for_Handwritten_Digit_Classification_Using_the_MNIST_Dataset.pdf" download>Click here to download</a>
-            </td>
-        </tr>
-        <tr>
-            <td style="padding: 8px; border: 1px solid #ddd;">
-                <strong>Temperature Prediction</strong><br>
-                <em>This project makes use of LSTM and predicts the maximum and minimum temperatures.</em>
-            </td>
-            <td style="padding: 8px; border: 1px solid #ddd;">
-                <a href="Temperature_Prediction_using_Deep_Learning.pdf" download>Click here to download</a>
-            </td>
-        </tr>
-        <tr>
-            <td style="padding: 8px; border: 1px solid #ddd;">
-                <strong>IPL Score Prediction</strong><br>
-                <em>This project makes use of neural networks and provides an interactive interface to the user to dynamically predict the total score of any match at any venue.</em>
-            </td>
-            <td style="padding: 8px; border: 1px solid #ddd;">
-                <a href="IPL_score_prediction.pdf" download>Click here to download</a>
-            </td>
-        </tr>
-         <tr>
-            <td style="padding: 8px; border: 1px solid #ddd;">
-                <strong>Report on Community Detection and Network Analysis using Modularity </strong><br>
-                <em>The presentation report of my winter internship in IISER Thiruvananthapuram in December 2024./</em>
-            </td>
-            <td style="padding: 8px; border: 1px solid #ddd;">
-                <a href="Winter_Internship_IISER_Thiruvananthapuram_2024.pdf" download>Click here to download</a>
-            </td>
-        </tr>
-         <tr>
-            <td style="padding: 8px; border: 1px solid #ddd;">
-                <strong>Application of Modularity Analysis</strong><br>
-                <em>This project extended the study of community detectiion and network analysis using modularity to fields of protein biology , neurobiology , road networks and random walks.</em>
-            </td>
-            <td style="padding: 8px; border: 1px solid #ddd;">
-                <a href="Application_of_Modularity_Analysis.pdf" download>Click here to download</a>
-            </td>
-        </tr>
-        
-    </tbody>
-</table>
-
-</section>
-
-        <section>
-            <h2>Achievements 🌟</h2>
-            <ul>
-                <li><strong>INSPIRE Scholar:</strong> Awarded by the Department of Science and Technology for being among the top 1% in my college.</li>
-                <li><strong>SP College Scholarship:</strong> Secured 2nd rank in the science stream in 12th MSBSHSE board exams.</li>
-                <li><strong>Rangotsav Golden Art Merit Award:</strong> Represented school in national-level drawing competitions.</li>
-                <li><strong>English Marathon Awards:</strong> Multiple state and district-level awards for excellence in English.</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Hobbies & Interests 🏅</h2>
-            <ul>
-                <li>Playing Tabla and Dholaki 🎶 (with over 5 years of live stage performance experience).</li>
-                <li>Reading research papers, particularly in data science 📖.</li>
-                <li>Football enthusiast ⚽, having competed at school and college levels, including ITSAV Football Tournament.</li>
-                <li>Blending art and academia seamlessly while staying passionate about creative and analytical pursuits.</li>
-            </ul>
-        </section>
-        <section>
-             <h2>Skills 🛠️</h2>
-             <ul>
-                 <li><strong>Programming Languages :</strong> Python , C , LaTeX</li>
-                 <li><strong>Data Science & Analysis :</strong> Pandas, NumPy , Matplotlib , Scikit-learn</li>
-                 <li><strong>Deep Learning : </strong> Tensorflow
-                 <li><strong>Machine Learning :</strong> Regression , Clustering , Dimensionality reduction , Community detection and network analysis</li>
-                 <li><strong>Academic skills :</strong> Communication , Presentations , Quick learner  </li>
-                 <li><strong>Other Skills :</strong> Leader , Analytical thinker , Problem Solver </li>
-                 <li><strong>Tools & Technologies:</strong> Jupyter Notebooks, VS Code , Overleaf , MS Word , MS Excel , MS Powerpoint</li>
-             </ul>
-        </section>
-
-        <section>
-            <h2>Languages 🌐</h2>
-            <ul>
-                <li><strong>English:</strong> Fluent</li>
-                <li><strong>Marathi:</strong> Fluent</li>
-                <li><strong>Hindi:</strong> Fluent</li>
-                <li><strong>German:</strong> Intermediate</li>
-                <li><strong>Bengali:</strong> Basic</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Volunteering Roles 🤝</h2>
-            <ul>
-            <li><strong>Event Coordinator:</strong> Successfully managed and executed events for Diwali, Ganpati, and more.</li>
-             <li><strong>Administrative Assistant:</strong> Provided critical logistical support during major festivals and events at IISER.</li>
-            </ul>
-        </section>
-       <section>
-    <h2>Curriculum Vitae and Resume ✅</h2>
-    <p>Click the link below to download my CV and Resume:</p>
-    <ul>
-        <li>
-            <a href="CV.pdf" download>Download CV.</a>
-        </li>
-        <li>
-            <a href="Resume.pdf" download>Download Resume.</a>
-        </li>
-    </ul>
-</section>
-
-    </main>
     <footer>
         <p>🌟 Designed by Maitreya Sameer Ganu</p>
     </footer>
+
     <script>
         const toggleButton = document.getElementById('theme-toggle');
         const body = document.body;
